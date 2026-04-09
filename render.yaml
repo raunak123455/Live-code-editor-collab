@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: live-code-editor
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: ALLOWED_ORIGINS
+        value: "*"
+      - key: REACT_APP_BACKEND_URL
+        value: ""
