@@ -149,7 +149,7 @@ function Home() {
 
         {/* Decorative background code */}
         <div className="bg-code-preview" aria-hidden="true">
-          <pre>{`import codeblend_sdk as cb
+          <pre>{`import live_code_editor_sdk as lce
 from core import Architect
 
 # Initialize the workspace environment
